@@ -6,7 +6,7 @@ terraform {
     }
   }
 }
-
+ 
 provider "google" {
   project = "bs-gcp-free"
   region  = "us-central1"
