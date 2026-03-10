@@ -13,7 +13,7 @@ variable "region" {
 variable "dataset_id" {
   type        = string
   description = "The ID of the BigQuery dataset to create"
-  default       = "first-dataset"
+  default       = "first_dataset"
 }
 
 variable "location" {
