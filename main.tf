@@ -5,7 +5,7 @@ provider "google" {
 }
 
 resource "google_bigquery_dataset" "new_dataset" {
-  dataset_id = "new-dataset-tf"
+  dataset_id = "new_dataset_tf"
   location = "US"
   description = "new dataset tf"
   project = "bs-gcp-free"
