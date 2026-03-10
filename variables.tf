@@ -1,6 +1,6 @@
 variable "project_id" {
   type        = string
-  value       = "bs-gcp-free"
+  default       = "bs-gcp-free"
   description = "Your Google Cloud project ID"
 }
 
