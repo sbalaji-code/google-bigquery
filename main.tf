@@ -8,17 +8,18 @@ terraform {
 }
 
 provider "google" {
-  project = var.project_id
-  region  = var.region
+  project = "bs-gcp-free"
+  region  = "us-central1"
+  zone    = "us-central1-a"
 }
 
 resource "google_bigquery_dataset" "new_dataset" {
-  dataset_id = var.dataset_id
-  location = var.location
-  description = var.description
-  project = var.project_id
+  dataset_id = "new-dataset-tf"
+  location = "US"
+  description = "new dataset tf"
+  project = "bs-gcp-free"
   labels = {
-    environment = var.environment
+    environment = "development"
   }
 }
 
