@@ -1,10 +1,12 @@
 variable "project_id" {
   type        = string
+  value       = "bs-gcp-free"
   description = "Your Google Cloud project ID"
 }
 
 variable "region" {
   type        = string
+  value       = "us-central1"
   description = "The region where BigQuery resources will be created"
   default = "US" #  A reasonable default, but should be adjusted
 }
