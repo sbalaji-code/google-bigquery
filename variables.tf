@@ -6,9 +6,8 @@ variable "project_id" {
 
 variable "region" {
   type        = string
-  value       = "us-central1"
   description = "The region where BigQuery resources will be created"
-  default = "US" #  A reasonable default, but should be adjusted
+  default = "us-central1" #  A reasonable default, but should be adjusted
 }
 
 variable "dataset_id" {
