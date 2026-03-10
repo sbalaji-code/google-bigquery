@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-    google = {
-      source  = "hashicorp/google"
-      version = "~> 4.0"  # Specify a version constraint
-    }
-  }
-}
- 
 provider "google" {
   project = "bs-gcp-free"
   region  = "us-central1"
